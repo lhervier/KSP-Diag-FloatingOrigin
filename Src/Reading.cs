@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace com.github.lhervier.ksp.terrainprecisionfixdiag3
+namespace com.github.lhervier.ksp.diag.floatingorigin
 {
     /// <summary>
     /// One line of the table: the world frame of one body at one moment, and where the origin of the world

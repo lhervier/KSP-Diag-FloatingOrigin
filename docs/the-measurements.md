@@ -1,6 +1,6 @@
 # The measurements
 
-Part of [Terrain Precision Fix Diag 3](../README.md): the four cases of [the protocol](the-protocol.md),
+Part of [KSP Diag - Floating Origin](../README.md): the four cases of [the protocol](the-protocol.md),
 played on stock. What they show is in [What the measurements show](what-the-measurements-show.md).
 
 All four cases were played in that order, on KSP 1.12.5 with both expansions, [KSP Community

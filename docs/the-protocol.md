@@ -1,6 +1,6 @@
 # The protocol
 
-Part of [Terrain Precision Fix Diag 3](../README.md): four cases, step by step. The columns they fill
+Part of [KSP Diag - Floating Origin](../README.md): four cases, step by step. The columns they fill
 are in [What it measures](what-it-measures.md#the-window), and what they read is in [The measurements](the-measurements.md).
 
 The frame has two inputs, the orientation and the position of the terrain sphere. Each case makes

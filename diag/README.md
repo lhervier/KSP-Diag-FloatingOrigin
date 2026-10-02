@@ -1,6 +1,6 @@
 # The saves
 
-Part of [Terrain Precision Fix Diag 3](../README.md): the saves its protocol uses, and the ones the
+Part of [KSP Diag - Floating Origin](../README.md): the saves its protocol uses, and the ones the
 other instruments of the family use on Real Solar System.
 
 - [`approach-kerbin.sfs`](approach-kerbin.sfs) — the save [case 3 of the protocol](../docs/the-protocol.md#case-3-a-rover-near-a-parked-craft-then-on-its-own)
@@ -10,8 +10,8 @@ Copy a save into the folder of a sandbox game and load it from that game.
 
 ## On Real Solar System
 
-The saves [Terrain Precision Fix Diag 1](https://github.com/lhervier/KSP-TerrainPrecisionFixDiag) and
-[Terrain Precision Fix Diag 2](https://github.com/lhervier/KSP-TerrainPrecisionFixDiag2) are loaded
+The saves [KSP Diag - Landed Vessel](https://github.com/lhervier/KSP-Diag-LandedVessel) and
+[KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight) are loaded
 from on [Real Solar System](https://github.com/KSP-RO/RealSolarSystem) 20.1.3.0, kept here too so
 that this instrument can be run on them. They need Real Solar System and what it requires (Kopernicus,
 Modular Flight Integrator, KSPTextureLoader, the RSS textures), on an install of their own: they only

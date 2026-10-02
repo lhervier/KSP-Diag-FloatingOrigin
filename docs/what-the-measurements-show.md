@@ -1,6 +1,6 @@
 # What the measurements show
 
-Part of [Terrain Precision Fix Diag 3](../README.md): what [the measurements](the-measurements.md) say
+Part of [KSP Diag - Floating Origin](../README.md): what [the measurements](the-measurements.md) say
 about the frame the ground is built in.
 
 This page says when the frame changes, and by how much. What a change of frame does to the ground is

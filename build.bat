@@ -1,5 +1,5 @@
 @echo off
-REM Minimal build: compiles the DLL and drops it into GameData\TerrainPrecisionFixDiag3Mod\.
+REM Minimal build: compiles the DLL and drops it into GameData\KSPDiagFloatingOrigin\.
 REM Installing means copying that folder into the GameData of KSP -- this script never does it.
 setlocal
 cd /d "%~dp0"
@@ -9,18 +9,18 @@ if not defined KSPDIR (
     exit /b 1
 )
 
-dotnet build TerrainPrecisionFixDiag3Mod.csproj -p:KSP_DATA_DIR="%KSPDIR%\KSP_x64_Data"
+dotnet build KSPDiagFloatingOrigin.csproj -p:KSP_DATA_DIR="%KSPDIR%\KSP_x64_Data"
 if errorlevel 1 (
     echo ERROR: build failed
     exit /b 1
 )
 
-copy /y "Output\bin\TerrainPrecisionFixDiag3Mod.dll" "GameData\TerrainPrecisionFixDiag3Mod\" >nul
+copy /y "Output\bin\KSPDiagFloatingOrigin.dll" "GameData\KSPDiagFloatingOrigin\" >nul
 if errorlevel 1 (
     echo ERROR: could not copy the DLL into GameData
     exit /b 1
 )
 
 echo.
-echo Built: GameData\TerrainPrecisionFixDiag3Mod\TerrainPrecisionFixDiag3Mod.dll
-echo Copy GameData\TerrainPrecisionFixDiag3Mod into the GameData of KSP to install it.
+echo Built: GameData\KSPDiagFloatingOrigin\KSPDiagFloatingOrigin.dll
+echo Copy GameData\KSPDiagFloatingOrigin into the GameData of KSP to install it.

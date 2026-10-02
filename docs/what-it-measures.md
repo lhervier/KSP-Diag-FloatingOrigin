@@ -1,6 +1,6 @@
 # What it measures
 
-Part of [Terrain Precision Fix Diag 3](../README.md): the world frame the terrain is built in, why it
+Part of [KSP Diag - Floating Origin](../README.md): the world frame the terrain is built in, why it
 moves, and what the window shows of it. How to fill the window is in [The protocol](the-protocol.md).
 
 **Unity is precise near zero, not far from it.** Unity, the engine KSP runs on, places every object

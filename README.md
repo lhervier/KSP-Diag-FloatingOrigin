@@ -1,4 +1,4 @@
-# Terrain Precision Fix - Diagnostic Mod 3
+# KSP Diag - Floating Origin
 
 **⚠️ Work in progress.** This is an active investigation, not a finished mod. The code and this page can still change, and several questions are still open.
 
@@ -75,24 +75,24 @@ built in whatever frame the trip has left.
 
 ## Get it
 
-Either way you end up with the same `GameData/TerrainPrecisionFixDiag3Mod/` folder.
+Either way you end up with the same `GameData/KSPDiagFloatingOrigin/` folder.
 
 **Download it** — from the assets of the
-[latest release](https://github.com/lhervier/KSP-TerrainPrecisionFixDiag3/releases/latest).
+[latest release](https://github.com/lhervier/KSP-Diag-FloatingOrigin/releases/latest).
 
 **Or compile it** — clone this repository, set `KSPDIR` to your KSP install folder and run
 `build.bat`. It needs the .NET SDK and
 [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer) installed in that KSP, takes a few seconds,
 reads the KSP assemblies straight from your install, and puts the DLL in
-`GameData/TerrainPrecisionFixDiag3Mod/` inside the repository. It does not install anything.
+`GameData/KSPDiagFloatingOrigin/` inside the repository. It does not install anything.
 KSP-MCPServer is only needed to compile: it provides the attribute that marks what this mod offers to
 it, and this mod runs the same without it. Worth doing if you would rather not run a binary you have no source for while
 reporting a measurement.
 
 ## Install
 
-Drop `GameData/TerrainPrecisionFixDiag3Mod` into the `GameData` of KSP, so that you end up with
-`GameData/TerrainPrecisionFixDiag3Mod/TerrainPrecisionFixDiag3Mod.dll`. It runs on a stock install:
+Drop `GameData/KSPDiagFloatingOrigin` into the `GameData` of KSP, so that you end up with
+`GameData/KSPDiagFloatingOrigin/KSPDiagFloatingOrigin.dll`. It runs on a stock install:
 no Harmony, no ModuleManager, no dependency of any kind.
 
 It reads the world and writes nothing at all: the table lives in memory and is gone when you close the

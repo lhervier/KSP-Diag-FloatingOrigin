@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace com.github.lhervier.ksp.terrainprecisionfixdiag3
+namespace com.github.lhervier.ksp.diag.floatingorigin
 {
     /// <summary>
     /// World frame recorder. Shows, for the body of the active vessel, the two angles its rotation is split
@@ -11,7 +11,7 @@ namespace com.github.lhervier.ksp.terrainprecisionfixdiag3
     /// changes, so reloading the same save several times builds it up line by line.
     /// </summary>
     [KSPAddon(KSPAddon.Startup.Flight, false)]
-    public class TerrainPrecisionFixDiag3Mod : MonoBehaviour
+    public class KSPDiagFloatingOrigin : MonoBehaviour
     {
         private static readonly List<Reading> READINGS = new List<Reading>();
 
@@ -67,7 +67,7 @@ namespace com.github.lhervier.ksp.terrainprecisionfixdiag3
                 Constants.WINDOW_ID,
                 windowRect,
                 DrawWindow,
-                "Terrain Precision Fix Diag 3"
+                "KSP Diag - Floating Origin"
             );
         }
 

@@ -1,7 +1,7 @@
 using System.Globalization;
 using UnityEngine;
 
-namespace com.github.lhervier.ksp.terrainprecisionfixdiag3
+namespace com.github.lhervier.ksp.diag.floatingorigin
 {
     /// <summary>
     /// Turns what has been measured into what the table shows. Invariant culture throughout, so that two
