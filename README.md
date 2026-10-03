@@ -33,7 +33,7 @@ and how it is turned are the frame the ground is built in.
 The window records, one line at a time: the game clock, whether the planet or the sky is turning, the
 two angles the game splits the planet's rotation between, and the world position of the terrain
 sphere; and, for the world origin itself, how far your craft is from it, how many times it has been
-shifted since the previous line, and how far the last shift moved it.
+shifted since the previous line, and how far the last shift moved it. `Alt+F6` hides the window, and shows it again.
 
 **→ Full chapter: [What it measures](docs/what-it-measures.md)**
 
