@@ -61,6 +61,15 @@ namespace com.github.lhervier.ksp.diag.floatingorigin
             };
         }
 
+        [McpTool("floatingorigin_show_window",
+            "Shows or hides the window of KSP Diag - Floating Origin, as Mod+F6 does; what it measures goes on either " +
+            "way. Returns whether it shows (visible).")]
+        internal static object ShowWindow(bool visible)
+        {
+            KSPDiagFloatingOrigin.WindowVisible = visible;
+            return new Dictionary<string, object> { { "visible", KSPDiagFloatingOrigin.WindowVisible } };
+        }
+
         // The window of this mod in the current scene; the window only exists in flight.
         private static KSPDiagFloatingOrigin Window()
         {
