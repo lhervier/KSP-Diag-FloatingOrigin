@@ -19,6 +19,8 @@ where it started, a record.
 The cases run in the order given, case 3 last: the parked craft of its save stays in the game, and a craft
 launched after it would find that craft within range, the origin held still. It writes every line to
 lines.json, takes a screenshot of the table after each case, and quits KSP (unless --keep-running is given).
+The window of the instrument is hidden once the flight opens, so that the scene shows, and shown only for
+its screenshots.
 """
 import argparse
 import json
@@ -80,6 +82,7 @@ def launch_rover(folder):
 def case1(folder, rows):
     launch_rover(folder)
     call("floatingorigin_clear")
+    call("floatingorigin_show_window", visible=False)
     call("save_game", save="quicksave")
     for i in range(1, 4):
         call("wait", seconds=10)
@@ -106,6 +109,7 @@ def case2(folder, rows):
     call("open_game", folder=folder)
     call("launch_vessel", craft="VAB/Diag3-Rocket.craft", site="LaunchPad")
     call("floatingorigin_clear")
+    call("floatingorigin_show_window", visible=False)
     call("wait", seconds=3)
     record(2, "on the pad", rows)
     call("set_flight", throttle=1, sas=True)
@@ -122,6 +126,7 @@ def case2(folder, rows):
 def case3(folder, rows):
     call("load_save", folder=folder, save="approach-kerbin")
     call("floatingorigin_clear")
+    call("floatingorigin_show_window", visible=False)
     call("wait", seconds=3)
     record(3, "start", rows)
     capsule = other_craft()
@@ -141,6 +146,7 @@ def case3(folder, rows):
 def case4(folder, rows):
     start = launch_rover(folder)
     call("floatingorigin_clear")
+    call("floatingorigin_show_window", visible=False)
     record(4, "start", rows)
     call("drive", heading=90, speed=20, distance=2250)
     record(4, "far end of the runway", rows)
@@ -169,9 +175,12 @@ def main():
     for case in options.cases:
         log("case %d" % case)
         {1: case1, 2: case2, 3: case3, 4: case4}[case](options.folder, rows)
+        # The window stays hidden but for its screenshot.
+        call("floatingorigin_show_window", visible=True)
         call("floatingorigin_move_window", x=0, y=60)
         call("wait", seconds=1)
         call("screenshot", path=os.path.join(out, "case%d.png" % case), return_image=False)
+        call("floatingorigin_show_window", visible=False)
     with open(os.path.join(out, "lines.json"), "w", newline="") as f:
         json.dump(rows, f, indent=1)
     log("done")
