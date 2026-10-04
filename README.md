@@ -48,17 +48,17 @@ two records. The two craft, and the save the third case starts from, come with t
 
 ## The measurements
 
-The four cases, played on stock KSP 1.12.5 with KSP Community Fixes.
+The four cases, played on stock KSP 1.12.5 with KSP Community Fixes, by a script through
+KSP-MCPServer.
 
-- **Loading the same save three times**: a different angle at every quickload, −140.000535°, −140.227733°,
-  −140.533449°, and a terrain sphere moved by 2.4 km, then 3.2 km.
-- **A rocket out of the rotating frame and back**: the frame switches at exactly 100 km, and the angle is 4.903481°
+- **Loading the same save three times**: a different angle at every quickload, −140.168417°, −140.404636°,
+  −140.640856°, and a terrain sphere moved by 2.5 km each time.
+- **A rocket out of the rotating frame and back**: the frame switches at 100 km, and the angle is 4.900808°
   further on the way down than on the pad.
-- **A rover near a parked craft, then on its own**: 1,901.2 m from the world origin near the capsule,
-  without a single shift; one shift of 530.606 m the moment the capsule was unloaded; then, on its own,
-  one shift of 500.025 m.
+- **A rover near a parked craft, then on its own**: no shift while the capsule is in range; one shift
+  of 2,474.108 m the moment the capsule was unloaded; then, on its own, one shift of 500.001 m.
 - **A rover down the runway and back**: back at the very spot it started from, the terrain sphere is
-  6.2 m from where it was.
+  6.6 m from where it was.
 
 **→ Full chapter: [The measurements](docs/the-measurements.md)**
 

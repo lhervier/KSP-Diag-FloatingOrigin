@@ -1,0 +1,59 @@
+[
+ {
+  "case": 4,
+  "step": "start",
+  "line": {
+   "HasBody": true,
+   "UniversalTime": 2044.6599999984305,
+   "RotatingFrame": true,
+   "DirectRotAngle": -140.00053465346534,
+   "InverseRotAngle": 264.15817894074996,
+   "SphereOrigin": {
+    "x": 493194,
+    "y": 508.9956970214844,
+    "z": -341822.25
+   },
+   "OriginDistance": 0.6426837767575071,
+   "Shifts": 1,
+   "LastShift": 1394.7807545217443
+  }
+ },
+ {
+  "case": 4,
+  "step": "far end of the runway",
+  "line": {
+   "HasBody": true,
+   "UniversalTime": 2146.559999998338,
+   "RotatingFrame": true,
+   "DirectRotAngle": -140.00053465346534,
+   "InverseRotAngle": 265.86049812969765,
+   "SphereOrigin": {
+    "x": 494330.84375,
+    "y": 489.39532470703125,
+    "z": -340175.5625
+   },
+   "OriginDistance": 259.64385261237885,
+   "Shifts": 4,
+   "LastShift": 500.1161211059055
+  }
+ },
+ {
+  "case": 4,
+  "step": "back at the start",
+  "line": {
+   "HasBody": true,
+   "UniversalTime": 2276.6399999982195,
+   "RotatingFrame": true,
+   "DirectRotAngle": -140.00053465346534,
+   "InverseRotAngle": 268.03358625627584,
+   "SphereOrigin": {
+    "x": 493196.15625,
+    "y": 503.0458679199219,
+    "z": -341820.21875
+   },
+   "OriginDistance": 6.5353773840857015,
+   "Shifts": 4,
+   "LastShift": 500.00164866541763
+  }
+ }
+]

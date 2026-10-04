@@ -1,0 +1,5 @@
+23:10:18 case 4
+23:10:31   case 4, start                  frame Rotating  origin distance      0.6 m  shifts 1  last shift 1394.7807545217443
+23:12:13   case 4, far end of the runway  frame Rotating  origin distance    259.6 m  shifts 4  last shift 500.1161211059055
+23:14:23   case 4, back at the start      frame Rotating  origin distance      6.5 m  shifts 4  last shift 500.00164866541763
+23:14:24 done

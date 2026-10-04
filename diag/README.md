@@ -8,6 +8,25 @@ other instruments of the family use on Real Solar System.
 
 Copy a save into the folder of a sandbox game and load it from that game.
 
+## The script
+
+[`automation/run-cases.py`](automation/run-cases.py) plays the four cases of the protocol through
+[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), with Python 3 alone; how to run it is at the
+top of the file, and in [Played by a script](../docs/the-protocol.md#played-by-a-script).
+
+## The runs
+
+KSP 1.12.5 with both expansions, Harmony, ModuleManager, KSP Community Fixes 1.41.1, this mod and
+KSP-MCPServer, the cases played by `run-cases.py`. Read in [The measurements](../docs/the-measurements.md).
+
+- [`runs/cases-stock.log`](runs/cases-stock.log) — the `KSP.log` of the session of cases 1, 2 and 3;
+  what the script printed in [`runs/cases-stock-script.txt`](runs/cases-stock-script.txt), and every
+  line it recorded in [`runs/cases-stock-lines.json`](runs/cases-stock-lines.json). The session ends
+  with a case 4 played after case 3, the capsule of case 3 still within range: not used.
+- [`runs/case4-stock.log`](runs/case4-stock.log) — the session of case 4, played alone; what the script
+  printed in [`runs/case4-stock-script.txt`](runs/case4-stock-script.txt), and every line it recorded
+  in [`runs/case4-stock-lines.json`](runs/case4-stock-lines.json).
+
 ## On Real Solar System
 
 The saves [KSP Diag - Landed Vessel](https://github.com/lhervier/KSP-Diag-LandedVessel) and

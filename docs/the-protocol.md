@@ -73,3 +73,23 @@ them off — and press **Record**. Drive to the far end of the runway, stop and
 press **Record**, then drive back to where you started, stop and press **Record** again.
 
 **→ Measured in [case 4](the-measurements.md#case-4-a-rover-driven-2-km-and-back)**
+
+## Played by a script
+
+[`diag/automation/run-cases.py`](../diag/automation/run-cases.py) plays the four cases above, step for
+step, and takes a screenshot of the table after each. It drives KSP through
+[KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), a mod that answers requests sent to it over
+HTTP, from the computer KSP runs on only; and it needs nothing but Python 3 — no AI, no package to
+install. Anyone can read it top to bottom: each case is a short function, in the order of this page.
+
+1. Install KSP-MCPServer next to this mod. Copy the two craft and the save into a sandbox game, as said
+   above, with no other craft landed around the Space Center; start KSP and wait for the main menu.
+2. Run `python run-cases.py --folder <your sandbox game> --cases 1 2 4 3 --out screenshots`.
+
+Case 3 goes last, or alone: the capsule of its save stays in the game, and a rover launched after it
+would find a craft parked within range, the origin held still. In case 2, the script reads the frame
+every fifth of a second and writes down the altitude at which it switches. In case 3, it drives north
+until the capsule is 100 m away — at once, if the save opens closer than that — then south until the
+capsule is unloaded, then on, slowly, until the origin moves. It writes every line to `lines.json` next
+to the screenshots, and quits KSP at the end — give it `--keep-running` to leave KSP open. Save
+`KSP.log` before starting KSP again: KSP writes it anew at every start.

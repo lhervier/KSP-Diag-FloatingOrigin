@@ -1,0 +1,20 @@
+22:33:24 case 1
+22:33:54   case 1, quickload 1            frame Rotating  origin distance      0.0 m  shifts 1  last shift 93716.86413440532
+22:34:10   case 1, quickload 2            frame Rotating  origin distance      0.0 m  shifts 1  last shift 131725.9000255273
+22:34:26   case 1, quickload 3            frame Rotating  origin distance      0.0 m  shifts 1  last shift 131725.89881501324
+22:34:27 case 2
+22:34:38   case 2, on the pad             frame Rotating  origin distance      4.9 m  shifts 1  last shift 448.32786654619224
+22:36:40   case 2, inertial               frame Inertial  origin distance      0.0 m  shifts 5215  last shift 18.86805034733684
+22:36:40   case 2: the frame stopped rotating at 100093 m
+22:41:33   case 2, rotating again         frame Rotating  origin distance      0.0 m  shifts 14668  last shift 18.70971295756738
+22:41:33   case 2: the frame rotated again at 99880 m
+22:41:34 case 3
+22:41:41   case 3, start                  frame Rotating  origin distance      0.3 m  shifts 1  last shift 31735566.500588916
+22:41:43   case 3, 100 m from the capsule frame Rotating  origin distance      0.3 m  shifts 0  last shift None
+22:44:16   case 3, capsule unloaded       frame Rotating  origin distance    203.2 m  shifts 1  last shift 2474.107695659927
+22:46:12   case 3, after the shift        frame Rotating  origin distance      1.8 m  shifts 1  last shift 500.0010002668234
+22:46:13 case 4
+22:46:25   case 4, start                  frame Rotating  origin distance      0.6 m  shifts 1  last shift 1394.7709845268494
+22:48:07   case 4, far end of the runway  frame Rotating  origin distance   2260.8 m  shifts 0  last shift None
+22:50:20   case 4, back at the start      frame Rotating  origin distance      0.6 m  shifts 0  last shift None
+22:50:21 done
