@@ -82,7 +82,7 @@ step, and takes a screenshot of the table after each. It drives KSP through
 HTTP, from the computer KSP runs on only; and it needs nothing but Python 3 — no AI, no package to
 install. Anyone can read it top to bottom: each case is a short function, in the order of this page.
 
-1. Install KSP-MCPServer next to this mod. Copy the two craft and the save into a sandbox game, as said
+1. Install KSP-MCPServer next to this mod. Copy the two craft and [the save](../diag/approach-kerbin.sfs) into a sandbox game, as said
    above, with no other craft landed around the Space Center; start KSP and wait for the main menu.
 2. Run `python run-cases.py --folder <your sandbox game> --cases 1 2 4 3 --out screenshots`.
 
