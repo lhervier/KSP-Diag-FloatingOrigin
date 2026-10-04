@@ -1,7 +1,7 @@
 # The saves
 
 Part of [KSP Diag - Floating Origin](../README.md): the saves its protocol uses, and the ones the
-other instruments of the family use on Real Solar System.
+loading protocol of the other instruments of the family uses on Real Solar System.
 
 - [`approach-kerbin.sfs`](approach-kerbin.sfs) — the save [case 3 of the protocol](../docs/the-protocol.md#case-3-a-rover-near-a-parked-craft-then-on-its-own)
   uses: a capsule landed on the flat grass west of the KSC, and a rover 26 m from it.
@@ -29,9 +29,10 @@ KSP-MCPServer, the cases played by `run-cases.py`. Read in [The measurements](..
 
 ## On Real Solar System
 
-The saves [KSP Diag - Landed Vessel](https://github.com/lhervier/KSP-Diag-LandedVessel) and
-[KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight) are loaded
-from on [Real Solar System](https://github.com/KSP-RO/RealSolarSystem) 20.1.3.0, kept here too so
+The saves of the loading protocol of
+[KSP Diag - Landed Vessel](https://github.com/lhervier/KSP-Diag-LandedVessel) and
+[KSP Diag - Terrain Height](https://github.com/lhervier/KSP-Diag-TerrainHeight)
+on [Real Solar System](https://github.com/KSP-RO/RealSolarSystem) 20.1.3.0, kept here too so
 that this instrument can be run on them. They need Real Solar System and what it requires (Kopernicus,
 Modular Flight Integrator, KSPTextureLoader, the RSS textures), on an install of their own: they only
 load there.
