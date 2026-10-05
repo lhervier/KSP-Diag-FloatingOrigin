@@ -1,7 +1,8 @@
 # What it measures
 
 Part of [KSP Diag - Floating Origin](../README.md): the world frame the terrain is built in, why it
-moves, and what the window shows of it. How to fill the window is in [The protocol](the-protocol.md).
+moves, and what the window shows of it. How to fill the window is in the protocol of each
+[situation](../README.md#the-situations).
 
 **Unity is precise near zero, not far from it.** Unity, the engine KSP runs on, places every object
 with `float` coordinates: about seven significant digits. Near the origin of the world, that is far
@@ -11,21 +12,21 @@ few centimetres.
 **So KSP keeps the craft near zero, and moves the universe instead.** The origin of Unity's world is
 kept on the active craft. When the craft has drifted far enough from it, KSP shifts the origin back
 onto the craft, and moves everything else by the same amount; a craft going fast drags it along
-almost continuously ([case 2](the-measurements.md#case-2-leaving-the-rotating-frame-and-coming-back-in-one-flight)).
+almost continuously ([leaving the rotating frame](the-measurements-rotating-frame.md)).
 This is called the *floating origin*. The centre
 of Kerbin, meanwhile, sits some 600 km away from that origin, wherever the last shift left it.
 
 **Except near a parked craft.** While another craft is landed and loaded, KSP does not shift the
 origin at all, however far the active craft goes (`Krakensbane.SafeToEngage`). Once you are far
 enough for that craft to be unloaded, the origin catches up with you, all at once. How far, in both
-cases, is measured in [case 3](the-measurements.md#case-3-a-rover-near-a-parked-craft-then-on-its-own).
+cases, is measured with [a rover near a parked craft](the-measurements-parked-craft.md).
 
 **And it turns either the planet or the sky.** Kerbin rotates, and KSP has two ways of showing it. Close
 to the planet, it stays still in Unity's axes and the rest of the universe — the Sun, the other
 worlds, the orbits — turns around it: a craft parked on the ground then does not have to be moved at
 every frame. Further out, it is the other way round: the planet turns, and the rest stays put. KSP
 calls the first one `Rotating` and the second one `Inertial`. The altitude of the switch is measured
-on Kerbin, in [case 2](the-measurements.md#case-2-leaving-the-rotating-frame-and-coming-back-in-one-flight).
+on Kerbin, [leaving the rotating frame](the-measurements-rotating-frame.md).
 
 **The ground is built in that frame.** The terrain of a body hangs from one Unity object, its terrain
 sphere (`PQS`). Every piece of ground, and the collision surface your landing gear touches, is placed
@@ -42,7 +43,7 @@ at the bottom that follows the game live.
 
 ![The window of the mod](../imgs/stock-case3.png)
 
-*[Case 3](the-measurements.md#case-3-a-rover-near-a-parked-craft-then-on-its-own): `Diag3-Rover` driven
+*[A rover near a parked craft](the-measurements-parked-craft.md): `Diag3-Rover` driven
 from the start of `approach-kerbin` to the capsule, then south until it was unloaded, and on to the
 next shift of the world origin.*
 

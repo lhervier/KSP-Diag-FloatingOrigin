@@ -3,27 +3,31 @@
 Part of [KSP Diag - Floating Origin](../README.md): the saves its protocol uses, and the ones the
 loading protocol of the other instruments of the family uses on Real Solar System.
 
-- [`approach-kerbin.sfs`](approach-kerbin.sfs) — the save [case 3 of the protocol](../docs/the-protocol.md#case-3-a-rover-near-a-parked-craft-then-on-its-own)
+- [`approach-kerbin.sfs`](approach-kerbin.sfs) — the save [the protocol of a rover near a parked craft](../docs/the-protocol-parked-craft.md)
   uses: a capsule landed on the flat grass west of the KSC, and a rover 26 m from it.
 
 Copy a save into the folder of a sandbox game and load it from that game.
 
 ## The script
 
-[`automation/run-cases.py`](automation/run-cases.py) plays the four cases of the protocol through
+[`automation/run-cases.py`](automation/run-cases.py) plays the four protocols through
 [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer), with Python 3 alone; how to run it is at the
-top of the file, and in [Played by a script](../docs/the-protocol.md#played-by-a-script).
+top of the file, and in the *Played by a script* chapter of each protocol, such as
+[the loading one](../docs/the-protocol-loading.md#played-by-a-script).
 
 ## The runs
 
 KSP 1.12.5 with both expansions, Harmony, ModuleManager, KSP Community Fixes 1.41.1, this mod and
-KSP-MCPServer, the cases played by `run-cases.py`. Read in [The measurements](../docs/the-measurements.md).
+KSP-MCPServer, the cases played by `run-cases.py`. Read in the measurements of each protocol, such as
+[loading the same save](../docs/the-measurements-loading.md).
 
-- [`runs/cases-stock.log`](runs/cases-stock.log) — the `KSP.log` of the session of cases 1, 2 and 3;
+- [`runs/cases-stock.log`](runs/cases-stock.log) — the `KSP.log` of the session of loading the same
+  save, leaving the rotating frame, and a rover near a parked craft;
   what the script printed in [`runs/cases-stock-script.txt`](runs/cases-stock-script.txt), and every
   line it recorded in [`runs/cases-stock-lines.json`](runs/cases-stock-lines.json). The session ends
-  with a case 4 played after case 3, the capsule of case 3 still within range: not used.
-- [`runs/case4-stock.log`](runs/case4-stock.log) — the session of case 4, played alone; what the script
+  with a rover driven 2 km and back, played after the parked craft, its capsule still within range: not
+  used.
+- [`runs/case4-stock.log`](runs/case4-stock.log) — the session of a rover driven 2 km and back, played alone; what the script
   printed in [`runs/case4-stock-script.txt`](runs/case4-stock-script.txt), and every line it recorded
   in [`runs/case4-stock-lines.json`](runs/case4-stock-lines.json).
 

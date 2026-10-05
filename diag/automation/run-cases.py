@@ -1,4 +1,4 @@
-"""Plays the four cases of "The protocol" of KSP Diag - Floating Origin.
+"""Plays the four protocols of KSP Diag - Floating Origin.
 
 It drives KSP through KSP-MCPServer, a mod that answers HTTP requests on 127.0.0.1, and needs nothing but
 Python 3: no AI, no package to install. Start KSP with KSP-MCPServer and KSP Diag - Floating Origin installed,
