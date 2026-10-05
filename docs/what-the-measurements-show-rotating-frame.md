@@ -5,7 +5,7 @@ say about the frame the ground is built in.
 
 This page says when the frame changes, and by how much. What a change of frame does to the ground is
 on [the page of the
-fix](https://github.com/lhervier/KSP-TerrainPrecisionFix/blob/master/docs/the-culprit-ground.md#why-it-is-different-at-every-load).
+fix](https://github.com/lhervier/KSP-TerrainPrecisionFix/blob/main/docs/the-culprit-ground.md#why-it-is-different-at-every-load).
 
 ## The frame changes during a flight, with nothing loaded
 
