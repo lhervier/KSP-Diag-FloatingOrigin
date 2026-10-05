@@ -3,3 +3,4 @@ obj/
 GameData/KSPDiagFloatingOrigin/*.dll
 GameData/KSPDiagFloatingOrigin/*.zip
 CLAUDE.md
+__pycache__/
