@@ -3,10 +3,6 @@
 Part of [KSP Diag - Floating Origin](../README.md): what [the measurements of loading the same save three times](the-measurements-loading.md)
 say about the frame the ground is built in.
 
-This page says when the frame changes, and by how much. What a change of frame does to the ground is
-on [the page of the
-fix](https://github.com/lhervier/KSP-TerrainPrecisionFix/blob/main/docs/the-culprit-ground.md#why-it-is-different-at-every-load).
-
 ## Loading a save does not give back the frame it was saved in
 
 The same quicksave, loaded three

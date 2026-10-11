@@ -3,10 +3,6 @@
 Part of [KSP Diag - Floating Origin](../README.md): what [the measurements of a rover driven 2 km and back](the-measurements-driving.md)
 say about the frame the ground is built in.
 
-This page says when the frame changes, and by how much. What a change of frame does to the ground is
-on [the page of the
-fix](https://github.com/lhervier/KSP-TerrainPrecisionFix/blob/main/docs/the-culprit-ground.md#why-it-is-different-at-every-load).
-
 ## The frame changes during a drive, with nothing loaded
 
 The angle never moves, but **Sphere

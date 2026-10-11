@@ -7,14 +7,6 @@ body is built in: how the body is turned in Unity's world axes, and where it sit
 that frame whenever you ask, so that you can compare it from one loading to the next, and from one
 moment of a flight to another.
 
-**It explains, it does not compare.** The other diagnostic mods of this family are read twice — once
-on a stock install, once with a fix installed — and the difference between the two readings is the
-whole point of running them. This one is read once. The five values it shows are the game's own
-description of its world: a fix to the terrain does not have to touch them, and the one this family
-proposes writes none of them. Reading the same figures with a fix installed is the expected outcome
-here, not a sign that the fix does nothing. Every figure on this page is stock KSP, and what they show
-is how the game places the ground it builds.
-
 **How this was made.** Written with Claude, Anthropic's AI assistant, and reviewed line by line by a
 human — me. I am saying so up front, because contributions made with an AI deserve a closer look than
 others, and because some people would rather stop reading here. That look is easy to give here: this
