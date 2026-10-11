@@ -15,17 +15,9 @@ hundred lines, and the protocol runs on a stock install with no dependency of an
 
 ## What it measures
 
-Unity places every object with `float` coordinates, precise near the origin of its world and only to a
-few centimetres 600 km away. So KSP keeps that origin on your craft, and shifts it back onto the craft
-once it has drifted far enough — except while another landed craft is loaded, when it waits until that
-craft is unloaded. Close to a planet, it stands still in Unity's axes and the sky turns around it; further
-out, the planet turns. The ground is placed relative to the planet's terrain sphere: where that sphere sits
-and how it is turned are the frame the ground is built in.
-
-The window records, one line at a time: the game clock, whether the planet or the sky is turning, the
-two angles the game splits the planet's rotation between, and the world position of the terrain
-sphere; and, for the world origin itself, how far your craft is from it, how many times it has been
-shifted since the previous line, and how far the last shift moved it. `Alt+F6` hides the window, and shows it again.
+KSP builds the ground relative to the planet's terrain sphere, in a Unity world whose origin it shifts
+back onto your craft. The window records, one line at a time, how that sphere sits and turns, and where
+the origin is. `Alt+F6` shows or hides it.
 
 **→ Full chapter: [What it measures](docs/what-it-measures.md)**
 
