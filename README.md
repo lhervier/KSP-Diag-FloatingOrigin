@@ -61,6 +61,20 @@ nothing loaded.
 
 **→ [The protocol](docs/the-protocol-driving.md) · [The measurements](docs/the-measurements-driving.md) · [What they show](docs/what-the-measurements-show-driving.md)**
 
+## Driving it by script
+
+With [KSP-MCPServer](https://github.com/lhervier/KSP-MCPServer) installed next to it, this mod offers
+its window to a program, as tools of that server: a script presses its buttons and reads what it shows,
+as a player would. Without the server, this mod runs the same.
+
+| tool | what it does |
+|---|---|
+| `floatingorigin_record` | presses *Record*: freezes the line in progress into the table and returns it; nothing while there is no body to read |
+| `floatingorigin_read` | reads the window: the recorded lines and the line in progress |
+| `floatingorigin_clear` | presses *Clear table* |
+| `floatingorigin_move_window` | moves the window, as dragging it does: `x` and `y` in pixels from the top left corner of the screen; returns its position and size |
+| `floatingorigin_show_window` | shows or hides the window, as `Alt+F6` does; the reading goes on either way |
+
 ## Get it
 
 Either way you end up with the same `GameData/KSPDiagFloatingOrigin/` folder.
