@@ -124,6 +124,10 @@ def case2(folder, rows):
 
 
 def case3(folder, rows):
+    # KSP-MCPServer loads a save from the space centre or in flight only, as a player does: from the main
+    # menu, the game is opened at the space centre first.
+    if call("get_state")["scene"] == "MAINMENU":
+        call("open_game", folder=folder)
     call("load_save", folder=folder, save="approach-kerbin")
     call("floatingorigin_clear")
     call("floatingorigin_show_window", visible=False)
